@@ -8,7 +8,6 @@ const customMiddleware = (req, res, next)=>{
 }
 
 
-app.use(customMiddleware)
 
 app.get('/', (req, res)=>{
     res.send("hello WOrld")
