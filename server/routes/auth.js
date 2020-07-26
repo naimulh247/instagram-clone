@@ -59,7 +59,9 @@ router.post('/signin', (req, res)=>{
 
                     }
                 })
-                .catch(err)
+                .catch(err=>{
+                    console.log()
+                })
         })
 })
 
