@@ -31,6 +31,9 @@ router.post('/signup', (req, res)=>{
                     console.log(err)
                 })
         })
+        .catch(err=>{
+            console.log(err)
+        })
 })
 
 
