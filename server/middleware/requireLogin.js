@@ -9,7 +9,7 @@ module.exports=(req,res,next)=>{
     const token = authorization.replace("Bearer", "")
     jwt.verify(token,JWT_SECRET,(err, payload)=>{
         if(err){
-            
+            res.se
         }
     } )
 }
