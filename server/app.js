@@ -6,6 +6,9 @@ const customMiddleware = ()=>{
     console.log("middleware executed!")
 }
 
+
+
+
 app.get('/', (req, res)=>{
     res.send("hello WOrld")
 })
