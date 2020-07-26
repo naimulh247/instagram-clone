@@ -2,7 +2,6 @@ const express = require('express')
 const router = express.Router()
 var bodyParser = require('body-parser')
 
-var jsonParser = bodyParser.json()
 
 router.get('/', (req, res)=>{
     res.send("Router works")
