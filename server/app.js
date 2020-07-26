@@ -10,7 +10,7 @@ mongooes.connection.on('connected', ()=>{
     console.log("connected to mongo")
 })
 mongooes.connection.on('error', ()=>{
-    console.log("connecting to mongo")
+    console.log("error connecting to mongo")
 })
 
 
