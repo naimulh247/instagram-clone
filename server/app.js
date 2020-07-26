@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const  bodyParser = require('body-parser')
+const bodyParser = require('body-parser')
 const mongooes = require('mongoose')
 const {MONGOURL} = require('./keys') 
 const port = 5000
