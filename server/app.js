@@ -2,7 +2,7 @@ const express = require('express')
 const app  = express()
 const port = 5000
 
-const customMiddle
+const customMiddleware = 
 
 app.get('/', (req, res)=>{
     res.send("hello WOrld")
