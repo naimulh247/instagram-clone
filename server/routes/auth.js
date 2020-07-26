@@ -60,7 +60,7 @@ router.post('/signin', (req, res)=>{
                     }
                 })
                 .catch(err=>{
-                    console.log()
+                    console.log(err)
                 })
         })
 })
