@@ -5,4 +5,4 @@ router.get('/', (req, res)=>{
     res.send("Router works")
 })
 
-exports router
+exports = router
