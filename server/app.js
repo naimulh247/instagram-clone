@@ -4,6 +4,7 @@ const port = 5000
 
 const customMiddleware = (req, res, next)=>{
     console.log("middleware executed!")
+    next()
 }
 
 
