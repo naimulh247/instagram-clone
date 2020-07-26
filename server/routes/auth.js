@@ -7,7 +7,7 @@ router.get('/', (req, res)=>{
 })
 
 router.post('/signup', (req, res)=>{
-    const {name, email, password}
+    const {name, email, password} = 
 })
 
 
