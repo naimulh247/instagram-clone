@@ -4,12 +4,19 @@ const mongoose = require('mongoose')
 
 
 
+
 router.post('/createpost', (req, res)=>{
     const {title, body} = req.body
     if(!title || !body){
         return res.status(422).json({error:"please add all fields"})
     }
-    
+    console.log(req.user)
+    res.send("oka")
+    // const post = new post({
+    //     title,
+    //     body,
+    //     postedBy
+    // })
 })
 
 
