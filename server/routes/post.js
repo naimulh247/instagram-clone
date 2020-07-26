@@ -12,7 +12,7 @@ router.post('/createpost',requireLogin, (req, res)=>{
     }
     
     res.send("oka")
-    const post = new post({
+    const post = new Post({
         title,
         body,
         postedBy:req.user
