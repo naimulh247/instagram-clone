@@ -5,3 +5,4 @@ router.get('/', (req, res)=>{
     res.send("Router works")
 })
 
+exp
