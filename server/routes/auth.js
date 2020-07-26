@@ -51,7 +51,7 @@ router.post('/signin', (req, res)=>{
             }
             bcrypt.compare(password, savedUser.password)
                 .then(doMatch=>{
-                    
+                    if(doMatch)
                 })
         })
 })
