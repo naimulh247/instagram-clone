@@ -14,7 +14,7 @@ app.get('/', (req, res)=>{
 })
 
 app.get('/about',customMiddleware, (req, res)=>{
-    res.send("hello WOrld")
+    res.send("about page")
 })
 
 
