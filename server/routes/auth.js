@@ -50,7 +50,9 @@ router.post('/signin', (req, res)=>{
                 return res.status(422).json({error:"Invalid email or password"})
             }
             bcrypt.compare(password, savedUser.password)
-                .then(doMatch)
+                .then(doMatch=>{
+                    
+                })
         })
 })
 
