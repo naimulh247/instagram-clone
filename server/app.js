@@ -5,10 +5,8 @@ const mongooes = require('mongoose')
 const {MONGOURL} = require('./keys') 
 const port = 5000
 require('./models/user')
+require('./models/post')
 
-
-app.use(bodyParser.json())
-app.use(require('./routes/auth'))
 
 mongooes.connect(MONGOURL,{ 
     useNewUrlParser:true,
@@ -21,7 +19,9 @@ mongooes.connection.on('error', (err)=>{
     console.log("error connecting to mongo", err)
 })
 
-
+app.use(bodyParser.json())
+app.use(require('./routes/auth'))
+app.use(require('./routes/post'))
 
 
 app.listen(port, ()=>{
