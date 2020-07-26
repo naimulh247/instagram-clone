@@ -3,7 +3,7 @@ const app  = express()
 const port = 5000
 const mongooes = require('mongoose')
 const {MONGOURL} = require('./keys') 
-require('./models/us')
+require('./models/user')
 
 
 mongooes.connect(MONGOURL,{ 
