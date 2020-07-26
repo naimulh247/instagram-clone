@@ -55,7 +55,7 @@ router.post('/signin', (req, res)=>{
                         res.json({message:"successfully signed in"})
                     }
                     else{
-                        return res.json({message:"Incorrect "})
+                        return res.json({message:"Incorrect email or password"})
 
                     }
                 })
