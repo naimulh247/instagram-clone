@@ -55,7 +55,7 @@ router.post('/signin', (req, res)=>{
                     if(doMatch){
                         res.json({message:"successfully signed in"})
 
-                        const token = jwt.sign()
+                        const token = jwt.sign({savedUser})
                     }
                     else{
                         return res.json({message:"Incorrect email or password"})
