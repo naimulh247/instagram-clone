@@ -21,6 +21,7 @@ mongooes.connection.on('error', (err)=>{
 
 app.use(bodyParser.json())
 app.use(require('./routes/auth'))
+app.use(require('./routes/post'))
 
 
 app.listen(port, ()=>{
