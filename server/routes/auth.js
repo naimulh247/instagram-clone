@@ -5,7 +5,7 @@ router.get('/', (req, res)=>{
     res.send("Router works")
 })
 
-router.post
+router.post('/')
 
 
 module.exports = router
