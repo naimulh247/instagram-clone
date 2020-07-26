@@ -14,11 +14,23 @@ router.post('/signup', (req, res)=>{
        return res.status(422).json({error:"Please add all fields"})
     }
     User.findOne({email:email})
-        .then((savedUser))=>{
+        .then((savedUser)=>{
             if(savedUser){
-                return res.send
+                return res.status(422).json({error:"user already exists"})
             }
-        }
+            const user = new User({
+                email,
+                password,
+                name
+            })
+            user.save()
+                .then(user=>{
+                    res.json({message:"saved successfully"})
+                })
+                .catch(err=>{
+                    console.log(err)
+                })
+        })
 })
 
 
