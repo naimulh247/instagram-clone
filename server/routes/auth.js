@@ -13,7 +13,7 @@ router.post('/signup', (req, res)=>{
     if(!email || !password || !name){
        return res.status(422).json({error:"Please add all fields"})
     }
-    User.findOne({email:email}).then
+    User.findOne({email:email
 })
 
 
