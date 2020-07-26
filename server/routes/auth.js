@@ -6,7 +6,7 @@ router.get('/', (req, res)=>{
 })
 
 router.post('/signup', (res, req)=>{
-    (req.body.name)
+    console.log(req.body.name)
 })
 
 
