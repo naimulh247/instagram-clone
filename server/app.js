@@ -5,8 +5,7 @@ const mongooes = require('mongoose')
 const {MONGOURL} = require('./keys') 
 const port = 5000
 require('./models/user')
-
-
+require('./models/post')
 
 
 mongooes.connect(MONGOURL,{ 
