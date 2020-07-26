@@ -10,13 +10,19 @@ router.post('/createpost',requireLogin, (req, res)=>{
     if(!title || !body){
         return res.status(422).json({error:"please add all fields"})
     }
-    console.log(req.user)
+    
     res.send("oka")
-    // const post = new post({
-    //     title,
-    //     body,
-    //     postedBy
-    // })
+    const post = new post({
+        title,
+        body,
+        postedBy:req.user
+    })
+    post.save().then(result=>{
+        res.json({post:result})
+    })
+    .catch(err=>{
+        console.log(err)
+    })
 })
 
 
