@@ -1,6 +1,6 @@
 module.exports=(req,res,next)=>{
     const {authorization} = req.headers
     if(!authorization){
-        res.status(401).json({error:"u"})
+        res.status(401).json({error:"you must be loged in"})
     }
 }
