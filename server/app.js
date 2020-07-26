@@ -1,9 +1,14 @@
 const express = require('express')
-const app  = express()
-const port = 5000
+const app = express()
+const bodyParser = require('body-parser')
 const mongooes = require('mongoose')
 const {MONGOURL} = require('./keys') 
+const port = 5000
+require('./models/user')
 
+
+app.use(bodyParser.json())
+app.use(require('./routes/auth'))
 
 mongooes.connect(MONGOURL,{ 
     useNewUrlParser:true,
