@@ -7,6 +7,7 @@ require('./models/user')
 
 
 app.use(require('./routes/auth'))
+app.use
 
 mongooes.connect(MONGOURL,{ 
     useNewUrlParser:true,
