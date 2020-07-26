@@ -4,6 +4,7 @@ const port = 5000
 const mongooes = require('mongoose')
 
 
+mongooes.connect
 
 
 
