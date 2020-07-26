@@ -6,7 +6,7 @@ const {MONGOURL} = require('./keys')
 require('./models/user')
 
 
-
+mongooes.model
 
 mongooes.connect(MONGOURL,{ 
     useNewUrlParser:true,
