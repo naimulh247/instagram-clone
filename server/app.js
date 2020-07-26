@@ -6,7 +6,7 @@ const {MONGOURL} = require('./keys')
 
 
 mongooes.connect(MONGOURL, 
-    )
+    useNewPa)
 mongooes.connection.on('connected', ()=>{
     console.log("connected to mongo")
 })
