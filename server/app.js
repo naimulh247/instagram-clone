@@ -9,6 +9,10 @@ mongooes.connect(MONGOURL)
 mongooes.connection.on('connected', ()=>{
     console.log("connected to mongo")
 })
+mongooes.connection.on('connected', ()=>{
+    console.log("connected to mongo")
+})
+
 
 
 
