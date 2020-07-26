@@ -15,8 +15,9 @@ const postSchema = new mongoose.Schema({
         default:"no photo"
     },
     postedBy:{
-
+        type:ObjectId,
+        ref:"User"
     }
 }) 
 
-module.exports()
+mongoose.model("Post",postSchema)
