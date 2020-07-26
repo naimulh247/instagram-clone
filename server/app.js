@@ -2,7 +2,7 @@ const express = require('express')
 const app  = express()
 const port = 5000
 
-const customMiddleware = ()=>{
+const customMiddleware = (req, res, next)=>{
     console.log("middleware executed!")
 }
 
