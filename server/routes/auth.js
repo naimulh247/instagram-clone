@@ -15,7 +15,7 @@ router.post('/signup', (req, res)=>{
     }
     User.findOne({email:email})
         .then((savedUser))=>{
-            if
+            if(savedUser)
         }
 })
 
