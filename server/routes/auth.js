@@ -8,7 +8,7 @@ const { JWT_SECRET } = require('../keys')
 
 
 router.ger('/protected', (req,res)=>{
-    
+    res.send()
 })
 
 router.post('/signup', (req, res)=>{
