@@ -1,8 +1,8 @@
 const express = require('express')
 const app  = express()
-const port = 5000
 const mongooes = require('mongoose')
 const {MONGOURL} = require('./keys') 
+const port = 5000
 require('./models/user')
 
 
