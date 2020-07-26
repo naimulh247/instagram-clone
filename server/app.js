@@ -3,7 +3,7 @@ const app  = express()
 const port = 5000
 
 const customMiddleware = ()={
-    console.log("middleware")
+    console.log("middleware executed!")
 }
 
 app.get('/', (req, res)=>{
