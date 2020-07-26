@@ -1,4 +1,4 @@
-
+const jwt 
 
 
 module.exports=(req,res,next)=>{
