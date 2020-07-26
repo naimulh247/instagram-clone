@@ -13,7 +13,7 @@ app.get('/', (req, res)=>{
     res.send("hello WOrld")
 })
 
-app.get('/about', (req, res)=>{
+app.get('/about',cus (req, res)=>{
     res.send("hello WOrld")
 })
 
