@@ -11,6 +11,7 @@ router.post('/signup', (req, res)=>{
     if(!email || !password || !name){
         res.json({error:"Please add all fields"})
     }
+    
 })
 
 
