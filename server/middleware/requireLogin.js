@@ -3,5 +3,5 @@ module.exports=(req,res,next)=>{
     if(!authorization){
         res.status(401).json({error:"you must be logged in"})
     }
-    authorization.replace
+    authorization.replace()
 }
