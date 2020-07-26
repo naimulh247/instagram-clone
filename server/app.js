@@ -1,5 +1,5 @@
 const express = require('express')
-const app  = express()
+const app = express()
 const mongooes = require('mongoose')
 const {MONGOURL} = require('./keys') 
 const port = 5000
