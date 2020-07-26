@@ -15,4 +15,3 @@ const userSchema = new mongoose.Schema({
     }
 })
 
-export 
