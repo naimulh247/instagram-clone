@@ -9,7 +9,7 @@ mongooes.connect(MONGOURL)
 mongooes.connection.on('connected', ()=>{
     console.log("connected to mongo")
 })
-mongooes.connection.on('error', ()=>{
+mongooes.connection.on('error', (err)=>{
     console.log("error connecting to mongo")
 })
 
