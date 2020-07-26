@@ -7,7 +7,7 @@ const jwt = require('jsonwebtoken')
 const { JWT_SECRET } = require('../keys')
 
 
-router.ger()
+router.ger('/protected')
 
 router.post('/signup', (req, res)=>{
     const {name, email, password} = req.body
