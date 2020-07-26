@@ -1,3 +1,3 @@
 const mongoose = require('mongoose');
 
-const userSchema 
+const userSchema = new 
