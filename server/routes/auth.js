@@ -5,7 +5,9 @@ router.get('/', (req, res)=>{
     res.send("Router works")
 })
 
-router.post('/signup', (res, req))
+router.post('/signup', (res, req)=>{
+    
+})
 
 
 module.exports = router
