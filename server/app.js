@@ -7,7 +7,7 @@ const port = 5000
 require('./models/user')
 
 
-app.use(express.bodyParser())
+app.use(bodyParser())
 app.use(require('./routes/auth'))
 
 mongooes.connect(MONGOURL,{ 
