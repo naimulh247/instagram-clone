@@ -11,7 +11,7 @@ router.post('/createpost',requireLogin, (req, res)=>{
         return res.status(422).json({error:"please add all fields"})
     }
     
-    res.send("oka")
+    
     const post = new Post({
         title,
         body,
