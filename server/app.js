@@ -14,7 +14,7 @@ app.get('/', (req, res)=>{
     res.send("hello WOrld")
 })
 
-app.get('/', (req, res)=>{
+app.get('/about', (req, res)=>{
     res.send("hello WOrld")
 })
 
