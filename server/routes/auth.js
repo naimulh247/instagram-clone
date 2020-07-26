@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-const mongooese 
+const mongoose 
 
 
 router.get('/', (req, res)=>{
