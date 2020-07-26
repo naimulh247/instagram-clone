@@ -8,7 +8,7 @@ router.get('/', (req, res)=>{
     res.send("Router works")
 })
 
-router.post('/signup', jsonParser,(req, res)=>{
+router.post('/signup', (req, res)=>{
     console.log(req.body)  
 })
 
