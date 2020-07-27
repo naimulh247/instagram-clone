@@ -8,3 +8,9 @@ a {
 .brand-logo{
   font-family: 'Grand Hotel', cursive;
 }
+
+.auth-card{
+  padding: 20px;
+  text-align: center;
+  max-width: 400px;
+}
