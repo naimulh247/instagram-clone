@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const Login = ()=>{
+const SignIn = ()=>{
     return(
         <div className="mycard">
             <div className="card auth-card input-field">
@@ -24,4 +24,4 @@ const Login = ()=>{
     )
 }
 
-export default Login
+export default SignIn
