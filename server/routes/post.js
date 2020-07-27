@@ -11,6 +11,9 @@ router.get('/allpost', (req, res)=>{
         .then(posts=>{
             return res.json({posts})
         })
+        .catch(err=>{
+            console.log(err)
+        })
 })
 
 router.post('/createpost',requireLogin, (req, res)=>{
