@@ -5,7 +5,7 @@ const Profile = ()=>{
     return(
         <div>
             <div>
-                <img style={{width:"160px", height:"160px", borderRadius:"80px"}}
+                <img style={{width:"160px", height:"160px", borderRadius:"80px"}} />
             </div>
 
             <div>
