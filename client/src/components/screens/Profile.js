@@ -10,7 +10,7 @@ const Profile = ()=>{
             </div>
 
             <div>
-
+                <h4>Naimul Hasan</h4>
             </div>
         </div>
     )
