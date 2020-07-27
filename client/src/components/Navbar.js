@@ -4,11 +4,11 @@ const NavBar = ()=>{
     return(
         <nav>
         <div className="nav-wrapper white" >
-          <a href="#" className="brand-logo left">Logo</a>
+          <a href="/" className="brand-logo left">Logo</a>
           <ul id="nav-mobile" className="right">
-            <li><a href="sass.html">Login</a></li>
-            <li><a href="badges.html">Signup</a></li>
-            <li><a href="collapsible.html">Profile</a></li>
+            <li><a href="/signin">Login</a></li>
+            <li><a href="/signup">Signup</a></li>
+            <li><a href="/profile">Profile</a></li>
           </ul>
         </div>
       </nav>
