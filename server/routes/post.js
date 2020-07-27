@@ -9,7 +9,7 @@ const Post = mongoose.model("Post")
 router.get('/allpost', (req, res)=>{
     Post.find()
         .then(posts=>{
-            return res.json({posts})
+            res.json({posts})
         })
         .catch(err=>{
             console.log(err)
