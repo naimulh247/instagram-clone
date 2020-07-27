@@ -16,7 +16,7 @@ const Login = ()=>{
                 />
                  <button className="btn waves-effect waves-light">
                     Login
-
+                    <i className="material-icons right">send</i>
                 </button>
             </div>
 
