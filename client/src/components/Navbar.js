@@ -4,7 +4,7 @@ const NavBar = ()=>{
     return(
         <nav>
         <div className="nav-wrapper white" >
-          <a href="/" className="brand-logo left">Logo</a>
+          <a href="/" className="brand-logo left">Instagram</a>
           <ul id="nav-mobile" className="right">
             <li><a href="/signin">Signin</a></li>
             <li><a href="/signup">Signup</a></li>
