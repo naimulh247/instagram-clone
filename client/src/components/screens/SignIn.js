@@ -17,6 +17,9 @@ const SignIn = ()=>{
                  <button className="btn waves-effect waves-light #64b5f6 blue lighten-2">
                     Login
                 </button>
+                <h5>
+                    <Link to="/sigup">Dont have an account?</Link>
+                </h5>
             </div>
 
 
