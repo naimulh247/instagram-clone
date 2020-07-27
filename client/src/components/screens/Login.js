@@ -4,7 +4,7 @@ import React from 'react'
 const Login = ()=>{
     return(
         <div>
-            <div class="card">
+            <div className="card">
                 <h2>Instagram</h2>
                 <input
                     type="text"
@@ -14,7 +14,7 @@ const Login = ()=>{
                     type="text"
                     placeholder="password"
                 />
-                 <button class="btn waves-effect waves-light">
+                 <button className="btn waves-effect waves-light">
                     Login
 
                 </button>
