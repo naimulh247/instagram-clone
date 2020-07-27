@@ -14,8 +14,9 @@ const Login = ()=>{
                     type="text"
                     placeholder="password"
                 />
-                 <button class="btn waves-effect waves-light">Login
-                    <i class="material-icons right">send</i>
+                 <button class="btn waves-effect waves-light">
+                    Login
+
                 </button>
             </div>
 
