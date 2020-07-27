@@ -3,7 +3,24 @@ import React from 'react'
 
 const Login = ()=>{
     return(
-        <h1>Login</h1>
+        <div>
+            <div class="card">
+                <h2>Instagram</h2>
+                <input
+                    type="text"
+                    placeholder="email"
+                />
+                <input 
+                    type="text"
+                    placeholder="password"
+                />
+                 <button class="btn waves-effect waves-light">Login
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
+
+
+        </div>
     )
 }
 
