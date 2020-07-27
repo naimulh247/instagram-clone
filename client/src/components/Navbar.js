@@ -6,7 +6,7 @@ const NavBar = ()=>{
         <div className="nav-wrapper white" >
           <a href="/" className="brand-logo left">Logo</a>
           <ul id="nav-mobile" className="right">
-            <li><a href="/signin">Login</a></li>
+            <li><a href="/signin">Signin</a></li>
             <li><a href="/signup">Signup</a></li>
             <li><a href="/profile">Profile</a></li>
           </ul>
