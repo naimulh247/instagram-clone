@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Link} from 'react-router-dom'
 
 const Signup = ()=>{
     return(
@@ -21,6 +21,9 @@ const Signup = ()=>{
                  <button className="btn waves-effect waves-light #64b5f6 blue lighten-2">
                     Sign Up
                 </button>
+                <h5>
+                    <Link to="/sigin">Already have an account?</Link>
+                </h5>
             </div>
 
 
