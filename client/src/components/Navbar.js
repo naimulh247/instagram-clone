@@ -4,7 +4,7 @@ const NavBar = ()=>{
     return(
         <nav>
         <div className="nav-wrapper">
-        // eslint-disable-next-line
+            
           <a href="#" className="brand-logo">Logo</a>
           <ul id="nav-mobile" className="right">
             <li><a href="sass.html">Sass</a></li>
