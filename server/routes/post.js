@@ -8,6 +8,7 @@ const Post = mongoose.model("Post")
 
 router.get('/allpost', (req, res)=>{
     Post.find()
+        .populate("postedBy")
         .then(posts=>{
             res.json({posts})
         })
