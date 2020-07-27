@@ -3,7 +3,15 @@ import React from 'react'
 
 const Profile = ()=>{
     return(
-        <h1>Profile</h1>
+        <div>
+            <div>
+                <img style={{width:"160px", height:"160px", borderRadius:"80px"}}
+            </div>
+
+            <div>
+
+            </div>
+        </div>
     )
 }
 
