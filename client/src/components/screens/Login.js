@@ -3,8 +3,8 @@ import React from 'react'
 
 const Login = ()=>{
     return(
-        <div>
-            <div className="card">
+        <div className="mycard">
+            <div className="card auth-card">
                 <h2>Instagram</h2>
                 <input
                     type="text"
