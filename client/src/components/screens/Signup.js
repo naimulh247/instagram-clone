@@ -22,7 +22,7 @@ const Signup = ()=>{
                     Sign Up
                 </button>
                 <h5>
-                    <Link to="/sigin">Already have an account?</Link>
+                    <Link to="/signin">Already have an account?</Link>
                 </h5>
             </div>
 
