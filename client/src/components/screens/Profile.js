@@ -16,6 +16,11 @@ const Profile = ()=>{
 
                 <div>
                     <h4>Naimul Hasan</h4>
+                    <div style={{display:"flex"}}>
+                        <h5>40 Posts</h5>
+                        <h5>40 Followers</h5>
+                        <h5>40 Following</h5>
+                    </div>
                 </div>
             </div>    
         </div>
