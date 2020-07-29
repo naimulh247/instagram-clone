@@ -15,9 +15,9 @@ const Signup = ()=>{
             name:"",
             password:"",
             email:""
-
-        })
-        })
+            })
+        }).then(res=>res.json())
+            .then
     }
 
 
