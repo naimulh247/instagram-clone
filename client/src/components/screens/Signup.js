@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
+import M from 'materialize-css'
 
 const Signup = ()=>{
     const [name, setName] = useState("")
@@ -18,7 +19,9 @@ const Signup = ()=>{
             })
         }).then(res=>res.json())
             .then(data=>{
-                console.log(data)
+                if(data.error){
+
+                }
             })
     }
 
