@@ -3,6 +3,10 @@ import {Link, useHistory} from 'react-router-dom'
 import M from 'materialize-css'
 
 const Signup = ()=>{
+
+    if(!brandeis.edu.test(email)){
+        return M.toast({html:"fail"})
+    }
     const history = useHistory()
     const [name, setName] = useState("")
     const [password, setPassword] = useState("")
