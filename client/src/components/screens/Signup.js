@@ -5,7 +5,8 @@ import M from 'materialize-css'
 const Signup = ()=>{
 
     if(!'brandeis.edu'.test(email)){
-        return M.toast({html:"fail"})
+        M.toast({html:"fail"})
+        return 
     }
     const history = useHistory()
     const [name, setName] = useState("")
