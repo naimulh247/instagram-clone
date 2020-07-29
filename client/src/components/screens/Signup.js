@@ -14,9 +14,9 @@ const Signup = ()=>{
             "Content-Type":"application/json"
         },
         body:JSON.stringify({
-            name:"",
-            password:"",
-            email:""
+            name:name,
+            password:password,
+            email:email
             })
         }).then(res=>res.json())
             .then(data=>{
