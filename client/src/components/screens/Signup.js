@@ -17,7 +17,9 @@ const Signup = ()=>{
             email:""
             })
         }).then(res=>res.json())
-            .then
+            .then(data=>{
+                console.log(data)
+            })
     }
 
 
