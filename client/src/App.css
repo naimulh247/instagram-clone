@@ -34,3 +34,8 @@ a {
 .item{
   width: 30%;
 }
+
+.home-card{
+  max-width: 550px;
+  height: max-content;
+}
