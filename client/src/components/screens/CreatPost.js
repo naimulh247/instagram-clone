@@ -14,7 +14,7 @@ const CreatePost = () =>{
             <input type="text" placeholder="Body"/>
             <div className="file-field  input-field">
                 <div className="btn #64b5f6 blue darken-1">
-                    <span>File</span>
+                    <span>Upload Image</span>
                     <input type="file"/>
                 </div>
                 <div className="file-path-wrapper">
