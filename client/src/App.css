@@ -35,11 +35,8 @@ a {
   width: 30%;
 }
 
-.home{
-  margin: 26px auto;
-}
-
 .home-card{
   max-width: 550px;
+  margin: 26px auto;
   height: max-content;
 }
