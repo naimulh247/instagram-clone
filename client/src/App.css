@@ -34,3 +34,15 @@ a {
 .item{
   width: 30%;
 }
+
+.home-card{
+  max-width: 550px;
+  margin: 26px auto;
+  height: max-content;
+}
+
+#toast-container{
+  top:30px !important;
+  right: 20px!important;
+  left: auto!important;
+}
