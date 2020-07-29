@@ -3,6 +3,7 @@ import {Link, useHistory} from 'react-router-dom'
 import M from 'materialize-css'
 
 const Signup = ()=>{
+    const historu = useHistory()
     const [name, setName] = useState("")
     const [password, setPassword] = useState("")
     const [email, setEmail] = useState("")
