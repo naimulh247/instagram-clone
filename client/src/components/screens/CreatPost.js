@@ -4,7 +4,7 @@ const CreatePost = () =>{
     return(
         <div className="card input-field"
             style={{
-                margin:"10px auto",
+                margin:"30px auto",
                 maxWidth:"500px",
                 padding:"20px",
                 textAlign:"center"
