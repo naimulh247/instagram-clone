@@ -5,6 +5,10 @@ const Signup = ()=>{
     const [name, setName] = useState("")
     const [password, setPassword] = useState("")
     const [email, setEmail] = useState("")
+    const PostData = () =>{
+        fetch("http://localhost:5000/signup")
+    }
+
 
     return(
         <div className="mycard">
