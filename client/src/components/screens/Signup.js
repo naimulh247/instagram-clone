@@ -10,7 +10,7 @@ const Signup = ()=>{
     const [email, setEmail] = useState("")
     
     const PostData = () =>{
-        if(!/[A-Za-z0-9._%+-]+@(testdomain.com)/.test(email)){
+        if(!/[A-Za-z0-9._%+-]+@(gmail.com)/.test(email)){
             M.toast({html:"fail"})
             return
         }
