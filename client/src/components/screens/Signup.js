@@ -6,7 +6,7 @@ const Signup = ()=>{
 
     if(/[A-Za-z0-9._%+-]+@(?!testdomain.com)[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/.test(email)){
         M.toast({html:"fail"})
-        return 
+         
     }
     const history = useHistory()
     const [name, setName] = useState("")
