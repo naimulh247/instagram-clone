@@ -31,6 +31,10 @@ function App() {
       <Route path="/profile">
         <Profile/>
       </Route>
+
+      <Route path="/create">
+        <CreatePost/>
+      </Route>
     </BrowserRouter>
   );
 }
