@@ -22,6 +22,9 @@ const Signup = ()=>{
                 if(data.error){
                     M.toast({html:data.error, classes:"#c62828 red darken-3"})
                 }
+                else{
+                    M.toast({html:data.message, classes:"#43a07 green darken-1"})
+                }
             })
     }
 
