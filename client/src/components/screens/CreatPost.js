@@ -4,7 +4,7 @@ const CreatePost = () =>{
 
     const [title, setTitle] = useState("")
     const [body, setBody] = useState("")
-
+    const [image, setImage] = useState("")
 
     return(
         <div className="card input-field"
@@ -24,7 +24,7 @@ const CreatePost = () =>{
             placeholder="Body"
             value={body}
             onChange={(e)=>setBody(e.target.value)}
-            >
+            />
             <div className="file-field  input-field">
                 <div className="btn #64b5f6 blue darken-1">
                     <span>Upload Image</span>
