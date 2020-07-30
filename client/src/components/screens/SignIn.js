@@ -4,8 +4,7 @@ import M from 'materialize-css'
 
 const SignIn = ()=>{
     const history = useHistory()
-
-import M from 'materialize-css'    const [password, setPassword] = useState("")
+    const [password, setPassword] = useState("")
     const [email, setEmail] = useState("")
     
     const PostData = () =>{
