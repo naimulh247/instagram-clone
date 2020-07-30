@@ -60,7 +60,7 @@ router.post('/signin', (req, res)=>{
                         res.json({token, user:{_id, name, email}})
                     }
                     else{
-                        return res.status(422).json({message:"Incorrect email or password"})
+                        return res.json({message:"Incorrect email or password"})
 
                     }
                 })
