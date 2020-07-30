@@ -6,6 +6,13 @@ const CreatePost = () =>{
     const [body, setBody] = useState("")
     const [image, setImage] = useState("")
 
+    const postDetails = ()=> {
+        const data = new FormData()
+        data.append("file", image)
+        data.append("upload_preset", "insta-clone-upload")
+        data.append("cloud_name", "insta-clone12")
+    }
+
     return(
         <div className="card input-field"
             style={{
