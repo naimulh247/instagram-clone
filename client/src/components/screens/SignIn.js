@@ -50,7 +50,9 @@ const SignIn = ()=>{
                     value={password}
                     onChange={(e)=>setPassword(e.target.value)}
                 />
-                <button className="btn waves-effect waves-light #64b5f6 blue darken-2">
+                <button className="btn waves-effect waves-light #64b5f6 blue darken-2"
+                    onClick={PostData()}
+                >
                     Login
                 </button>
                 <h5>
