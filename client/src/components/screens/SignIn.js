@@ -26,7 +26,7 @@ const SignIn = ()=>{
             .then(data=>{
                 console.log(data)
                 if(data.error){
-                    M.toast({html:data.error, classes:"#c62828 red darken-3"})
+                   return M.toast({html:data.error, classes:"#c62828 red darken-3"})
                 }
                 else{
                     M.toast({html:"signin success", classes:"#43a07 green darken-1"})
