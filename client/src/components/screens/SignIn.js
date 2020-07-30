@@ -28,7 +28,7 @@ const SignIn = ()=>{
                 }
                 else{
                     M.toast({html:data.message, classes:"#43a07 green darken-1"})
-                    history.push('/signin')
+                    history.push('/')
                 }
             }).catch(err=>{
                 console.log(err)
