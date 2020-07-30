@@ -5,6 +5,7 @@ const CreatePost = () =>{
     const [title, setTitle] = useState("")
     const [body, setBody] = useState("")
     const [image, setImage] = useState("")
+    const [url, setUrl] = useState("")
 
     const postDetails = ()=> {
         const data = new FormData()
