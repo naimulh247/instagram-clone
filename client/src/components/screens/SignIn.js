@@ -12,7 +12,7 @@ const SignIn = ()=>{
             M.toast({html:"fail"})
             return
         }
-        fetch("/signup",{ 
+        fetch("/signin",{ 
         method:"post",
         headers:{
             "Content-Type":"application/json"
