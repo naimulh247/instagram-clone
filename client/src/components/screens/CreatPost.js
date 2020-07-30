@@ -11,6 +11,17 @@ const CreatePost = () =>{
         data.append("file", image)
         data.append("upload_preset", "insta-clone-upload")
         data.append("cloud_name", "insta-clone12")
+        fetch("https://api.cloudinary.com/v1_1/insta-clone12/image/upload", {
+            method:"post",
+            body:data
+        })
+        .then(res=>res.json())
+        .then(data=>{
+            console.log(data)
+        })
+        .catch(err=>{
+            console.log(err)
+        })
     }
 
     return(
