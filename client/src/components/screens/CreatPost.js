@@ -23,6 +23,30 @@ const CreatePost = () =>{
         .catch(err=>{
             console.log(err)
         })
+
+        fetch("/createpost",{ 
+            method:"post",
+            headers:{
+                "Content-Type":"application/json"
+            },
+            body:JSON.stringify({
+                
+                title:title,
+                body:body,
+                pic:url
+                })
+            }).then(res=>res.json())
+                .then(data=>{
+                    if(data.error){
+                       return M.toast({html:data.error, classes:"#c62828 red darken-3"})
+                    }
+                    else{
+                        M.toast({html:"created post success", classes:"#43a07 green darken-1"})
+                        history.push('/')
+                    }
+                }).catch(err=>{
+                    console.log(err)
+                })
     }
 
     return(
