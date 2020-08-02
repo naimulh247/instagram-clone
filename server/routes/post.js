@@ -7,7 +7,7 @@ const Post = mongoose.model("Post")
 
 router.post('/createpost',requireLogin, (req, res)=>{
     const {title, body, pic} = req.body
-    console(title,body,pic)
+    console.log(title,body,pic)
     if(!title || !body || !pic){
         return res.status(422).json({error:"please add all fields"})
     }
