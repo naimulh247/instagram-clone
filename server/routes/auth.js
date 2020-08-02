@@ -49,7 +49,7 @@ router.post('/signin', (req, res)=>{
     User.findOne({email:email})
         .then(savedUser=>{
             if(!savedUser){
-                return res.status(422).json({error:"Invalid email or password"})
+                return res.status(404).json({error:"Invalid email or password"})
             }
             bcrypt.compare(password, savedUser.password)
                 .then(doMatch=>{
