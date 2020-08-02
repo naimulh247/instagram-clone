@@ -1,7 +1,10 @@
 import React, {useState} from 'react'
+import {useHistory} from 'react-router-dom'
+import M from 'materialize-css'
 
 const CreatePost = () =>{
 
+    const history =useHistory()
     const [title, setTitle] = useState("")
     const [body, setBody] = useState("")
     const [image, setImage] = useState("")
