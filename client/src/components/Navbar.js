@@ -1,7 +1,12 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import {Link} from 'react-router-dom'
+import {UserContext} from '../App'
+
 
 const NavBar = ()=>{
+
+    const {state,dispatch} = useContext(UserContext)
+
     return(
         <nav>
         <div className="nav-wrapper white" >
