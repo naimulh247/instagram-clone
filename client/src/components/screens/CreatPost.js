@@ -11,26 +11,9 @@ const CreatePost = () =>{
     const [url, setUrl] = useState("")
 
     useEffect(() => {
+        if(url){
+
         
-    }, [url])
-
-    const postDetails = ()=> {
-        const data = new FormData()
-        data.append("file", image)
-        data.append("upload_preset", "insta-clone-upload")
-        data.append("cloud_name", "insta-clone12")
-        fetch("https://api.cloudinary.com/v1_1/insta-clone12/image/upload", {
-            method:"post",
-            body:data
-        })
-        .then(res=>res.json())
-        .then(data=>{
-            setUrl(data.url)
-        })
-        .catch(err=>{
-            console.log(err)
-        })
-
         fetch("/createpost",{ 
             method:"post",
             headers:{
@@ -55,6 +38,27 @@ const CreatePost = () =>{
                 }).catch(err=>{
                     console.log(err)
                 })
+            }
+    }, [url])
+
+    const postDetails = ()=> {
+        const data = new FormData()
+        data.append("file", image)
+        data.append("upload_preset", "insta-clone-upload")
+        data.append("cloud_name", "insta-clone12")
+        fetch("https://api.cloudinary.com/v1_1/insta-clone12/image/upload", {
+            method:"post",
+            body:data
+        })
+        .then(res=>res.json())
+        .then(data=>{
+            setUrl(data.url)
+        })
+        .catch(err=>{
+            console.log(err)
+        })
+
+        
     }
 
     return(
