@@ -17,7 +17,7 @@ const Routing = () =>{
   const history = useHistory()
   useEffect(() => {
     const user = localStorage.getItem("user")
-    console.log(user)
+    console.log(type(user))
   }, [])
 
 
