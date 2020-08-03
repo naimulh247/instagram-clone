@@ -46,11 +46,13 @@ function App() {
   const [state, dispatch] = useReducer(reducer, initialState)
 
   return (
-    <BrowserRouter>
-      <NavBar/>
-      <Routing/>
-      
-    </BrowserRouter>
+    <UserContext.Provider value={{state:state, dispatch:dispatch}}>
+      <BrowserRouter>
+        <NavBar/>
+        <Routing/>
+        
+      </BrowserRouter>
+    </UserContext.Provider>
   );
 }
 
