@@ -8,6 +8,7 @@ import Profile from './components/screens/Profile'
 import Signin from './components/screens/SignIn'
 import Signup from './components/screens/Signup'
 import CreatePost from './components/screens/CreatPost'
+import {reducer, initialState} from './reducers/userReducers'
 
 
 const UserContext = createContext()
