@@ -1,4 +1,4 @@
-import React,{useEffect, createContext, useReducer} from 'react';
+import React,{useEffect, createContext, useReducer, useContext} from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/Navbar'
@@ -17,8 +17,10 @@ const Routing = () =>{
   const history = useHistory()
   useEffect(() => {
     const user = JSON.parse(localStorage.getItem("user"))
+    const {state,dispatch} = useContext(UserContext)
     
     if(user){
+      dispatch({type:"USER", payload:user})
       history.push('/')
     }
     else{
