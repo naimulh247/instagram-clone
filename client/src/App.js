@@ -15,6 +15,12 @@ export const UserContext = createContext()
 
 const Routing = () =>{
   const history = useHistory()
+  useEffect(() => {
+    const user = localStorage.getItem("user")
+    console.log(user)
+  }, [])
+
+
   return (
     <Switch>
       <Route exact path="/">
