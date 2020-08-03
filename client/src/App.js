@@ -17,7 +17,15 @@ const Routing = () =>{
   const history = useHistory()
   useEffect(() => {
     const user = JSON.parse(localStorage.getItem("user"))
-    console.log(typeof(user), user)
+    
+    if(user){
+      history.push('/')
+    }
+    else{
+      history.push('/signin')
+    }
+
+
   }, [])
 
 
