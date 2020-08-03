@@ -1,4 +1,4 @@
-import React,{useEffect, createContext} from 'react';
+import React,{useEffect, createContext, useReducer} from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/Navbar'
