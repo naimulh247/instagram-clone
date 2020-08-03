@@ -11,7 +11,7 @@ import CreatePost from './components/screens/CreatPost'
 import {reducer, initialState} from './reducers/userReducers'
 
 
-const UserContext = createContext()
+export const UserContext = createContext()
 
 const Routing = () =>{
   const history = useHistory()
