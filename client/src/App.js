@@ -13,6 +13,7 @@ import CreatePost from './components/screens/CreatPost'
 const UserContext = createContext()
 
 const Routing = () =>{
+  const history = useHistory()
   return (
     <Switch>
       <Route exact path="/">
