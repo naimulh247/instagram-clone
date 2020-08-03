@@ -42,6 +42,9 @@ const Routing = () =>{
 
 
 function App() {
+
+  const [state, dispatch] = useReducer(reducer, initialState)
+
   return (
     <BrowserRouter>
       <NavBar/>
