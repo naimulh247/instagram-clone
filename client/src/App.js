@@ -2,7 +2,7 @@ import React,{useEffect, createContext} from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/Navbar'
-import {BrowserRouter, Route,Switch} from 'react-router-dom'
+import {BrowserRouter, Route,Switch,useHistory} from 'react-router-dom'
 import Home from './components/screens/Home'
 import Profile from './components/screens/Profile'
 import Signin from './components/screens/SignIn'
