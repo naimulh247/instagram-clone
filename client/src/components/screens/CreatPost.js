@@ -10,6 +10,10 @@ const CreatePost = () =>{
     const [image, setImage] = useState("")
     const [url, setUrl] = useState("")
 
+    useEffect(() => {
+        
+    }, [url])
+
     const postDetails = ()=> {
         const data = new FormData()
         data.append("file", image)
