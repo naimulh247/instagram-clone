@@ -6,7 +6,7 @@ import {UserContext} from '../App'
 const NavBar = ()=>{
 
     const {state,dispatch} = useContext(UserContext)
-    const history = useContext()
+    const history = useHistory()
 
 
     const renderList = () =>{
