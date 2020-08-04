@@ -6,7 +6,19 @@ const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
 const { JWT_SECRET } = require('../keys')
 const requireLogin = require('../middleware/requireLogin')
+const Post = mongoose.model("Post")
 
+
+router.get('/allpost', requireLogin, (req,res)=>{
+    Post.find()
+    .populate("postedBy", "_id name")
+        .then(post=>{
+            res.json({post})
+        })
+        .catch(err=>{
+            console.log(err)
+        })
+})
 
 router.post('/signup', (req, res)=>{
     const {name, email, password} = req.body
