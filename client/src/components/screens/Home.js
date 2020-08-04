@@ -20,6 +20,7 @@ const Home = ()=>{
 
     const likePost = (id)=>{
         fetch('/like',{
+            method:"put",
             headers:{
                 "Content-Type":"application/json",
                 "Authorization": "Bearer "+localStorage.getItem("jwt")
@@ -35,6 +36,7 @@ const Home = ()=>{
 
     const unlikePost = (id)=>{
         fetch('/unlike',{
+            method:"put",
             headers:{
                 "Content-Type":"application/json",
                 "Authorization": "Bearer "+localStorage.getItem("jwt")
