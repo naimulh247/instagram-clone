@@ -17,9 +17,9 @@ const NavBar = ()=>{
                     onClick={()=>{
                       localStorage.clear()
                       dispatch({type:"CLEAR"})
-                    }
+                    }}
                 >
-                    Login
+                    Logout
                 </button>
           </li>
 
