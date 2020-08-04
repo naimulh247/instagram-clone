@@ -11,7 +11,18 @@ const NavBar = ()=>{
       if(state){
         return[
           <li><Link to="/profile">Profile</Link></li>,
-          <li><Link to="/create">Create Post</Link></li>
+          <li><Link to="/create">Create Post</Link></li>,
+          <li>
+            <button className="btn waves-effect waves-light #64b5f6 blue darken-2"
+                    onClick={()=>{
+                      localStorage.clear()
+                      dispatch({type:"CLEAR"})
+                    }
+                >
+                    Login
+                </button>
+          </li>
+
         ]
       }else{
         return [
