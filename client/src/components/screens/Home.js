@@ -17,8 +17,8 @@ const Home = ()=>{
             })
     }, [])
 
-    return(
-            <div className="home">
+    return ( 
+        <div className="home">
 
             {
                 data.map(item=>{
