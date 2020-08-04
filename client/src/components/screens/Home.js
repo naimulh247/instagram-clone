@@ -41,8 +41,8 @@ const Home = ()=>{
                             </div>
                             <div className="card-content">
                                 <i className="material-icons">favorite</i>
-                                <h6>Title</h6>
-                                <p>This is an amazing post</p>
+                                <h6> {item.title} </h6>
+                                <p>{item.body}</p>
                                 <input type="text" placeholder="add a comment"/>
                             </div>
                         </div>
