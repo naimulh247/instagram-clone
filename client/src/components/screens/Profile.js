@@ -4,7 +4,7 @@ import {UserContext} from '../../App'
 const Profile = ()=>{
 
     const [mypics, setMypics] = useState([])
-    const [state,dispatch] = useContext(UserContext)
+    const {state,dispatch} = useContext(UserContext)
 
 
     useEffect(() => {
