@@ -141,7 +141,7 @@ const Home = ()=>{
                                 <h6> {item.title} </h6>
                                 <p>{item.body}</p>
                                 {
-                                    item.comment.map(record=>{
+                                    item.comments.map(record=>{
                                         return (
                                             <h6><span style={{fontWeight:"500"}}>{record.postedBy.name}</span> </h6>
                                         )
