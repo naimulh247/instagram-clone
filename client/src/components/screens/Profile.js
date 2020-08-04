@@ -1,10 +1,10 @@
-import React, {useEffect, useState, useContext} from 'react'
+import React, {useEffect, useState, useContext, createContext} from 'react'
 import {UserContext} from '../../App'
 
 const Profile = ()=>{
 
     const [mypics, setMypics] = useState([])
-    const [state, dispatch] = useContext(UserContext)
+    const [state, dispatch] = useContext(createContext())
     console.log(state)
 
     useEffect(() => {
