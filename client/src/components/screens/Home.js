@@ -140,6 +140,13 @@ const Home = ()=>{
                                 <h6> {item.likes.length} Likes</h6>
                                 <h6> {item.title} </h6>
                                 <p>{item.body}</p>
+                                {
+                                    item.comment.map(record=>{
+                                        return (
+                                            <h6> <span style={{fontWeight:"500"}}> {record.postedBy.name} </span> </h6>
+                                        )
+                                    })
+                                }
                                 <form onSubmit={(e)=>{
                                     e.preventDefault()
                                     makeComment(e.target[0].value, item._id)
