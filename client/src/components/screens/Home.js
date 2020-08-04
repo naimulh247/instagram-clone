@@ -19,6 +19,10 @@ const Home = ()=>{
      },[])
 
     return( 
+        if(!data){
+            return <FancySpinner />
+        } 
+            
         <div className="home">
             
 
