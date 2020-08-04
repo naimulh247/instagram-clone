@@ -73,7 +73,7 @@ router.put('/comment', requireLogin,(req, res)=>{
         postedBy:req.user._id
     }
     Post.findByIdAndUpdate(req.body.postId,{
-        $pull:{likes:req.user._id}
+        $pull:{comments:comment}
     },{
         new:true
     }).exec((err, result)=>{
