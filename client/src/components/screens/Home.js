@@ -18,11 +18,12 @@ const Home = ()=>{
         })
      },[])
 
-    return( 
-        if(!data){
+    
+    if(!data){
             return <FancySpinner />
         } 
-            
+    
+    else{
         <div className="home">
             
 
@@ -50,7 +51,7 @@ const Home = ()=>{
 
 
         </div>
-    )
+    }
 }
 
 export default Home
