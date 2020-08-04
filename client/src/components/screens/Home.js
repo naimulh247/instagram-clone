@@ -21,7 +21,7 @@ const Home = ()=>{
     
     if(!data){
             return(
-                <div></div>
+                <div>Loading</div>
             )
         } 
     
