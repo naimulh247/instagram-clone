@@ -128,7 +128,7 @@ const Home = ()=>{
                                 <p>{item.body}</p>
                                 <form onSubmit={(e)=>{
                                     e.preventDefault()
-                                    console.log(e.target)
+                                    console.log(e.target[0])
                                 }}>
 
                                     <input type="text" placeholder="add a comment"/>
