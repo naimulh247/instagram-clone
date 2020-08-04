@@ -23,8 +23,8 @@ const Home = ()=>{
             
 
             {
-                console.log(data)
                 data.map(item=>{
+                    console.log(data)
                     return(
                         <div className="card home-card">
                             <h5>Naimul</h5>
