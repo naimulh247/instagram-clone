@@ -18,7 +18,19 @@ const Home = ()=>{
         })
      },[])
 
-    
+    const likePost = (id)=>{
+        fetch('/like',{
+            headers:{
+                "Content-Type":"application/json",
+                "Authorization": "Bearer "+localStorage.getItem("jwt")
+            },
+            body:JSON.stringify({
+                postId:id
+            })
+        })
+    }
+
+
     if(!data){
             return(
                 <div>Loading</div>
