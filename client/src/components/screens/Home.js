@@ -95,6 +95,8 @@ const Home = ()=>{
                 }
             })
             setData(newData)
+        }).catch(err=>{
+            console.log(err)
         })
     }
 
