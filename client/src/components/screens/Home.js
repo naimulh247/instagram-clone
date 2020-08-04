@@ -20,8 +20,10 @@ const Home = ()=>{
 
     return( 
         <div className="home">
+            
 
             {
+                console.log(data)
                 data.map(item=>{
                     return(
                         <div className="card home-card">
