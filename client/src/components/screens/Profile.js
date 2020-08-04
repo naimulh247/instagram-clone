@@ -13,6 +13,7 @@ const Profile = ()=>{
         }).then(res=> res.json())
         .then(result=>{
             console.log(result)
+            setMypics(result.mypost)
         })
     }, [])
 
@@ -41,12 +42,16 @@ const Profile = ()=>{
         
             <div className="gallery">
 
-                <img className="item" src="https://images.unsplash.com/photo-1555952517-2e8e729e0b44?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80" />
-                <img className="item" src="https://images.unsplash.com/photo-1555952517-2e8e729e0b44?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80" />
-                <img className="item" src="https://images.unsplash.com/photo-1555952517-2e8e729e0b44?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80" />
-                <img className="item" src="https://images.unsplash.com/photo-1555952517-2e8e729e0b44?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80" />
-                <img className="item" src="https://images.unsplash.com/photo-1555952517-2e8e729e0b44?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80" />
-            </div>
+                {
+                    mypics.map(item=>{
+                        return(
+                            <img className="item" src={item.photo} alt={item.title} />
+                            
+                        )
+                    })
+                }
+
+                </div>
         </div>
 
           
