@@ -1,11 +1,11 @@
-import React, {useEffect, useState, useContext, createContext} from 'react'
+import React, {useEffect, useState, useContext} from 'react'
 import {UserContext} from '../../App'
 
 const Profile = ()=>{
 
     const [mypics, setMypics] = useState([])
-    const [state, dispatch] = useContext(createContext())
-    console.log(state)
+    const [state,dispatch] = useContext(UserContext)
+
 
     useEffect(() => {
         fetch('/mypost',{
@@ -33,7 +33,7 @@ const Profile = ()=>{
                 </div>
 
                 <div>
-                    <h4>{state.name}</h4>
+                    <h4>Naimul Hasan</h4>
                     <div style={{display:"flex", justifyContent:"space-between", width:"108%"}}>
                         <h5>40 Posts</h5>
                         <h5>40 Followers</h5>
