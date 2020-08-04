@@ -1,7 +1,24 @@
-import React from 'react'
-
+import React, {useEffect, useState, useContext} from 'react'
+import {UserContext} from '../../App'
 
 const Profile = ()=>{
+
+    const [mypics, setMypics] = useState([])
+    const {state,dispatch} = useContext(UserContext)
+
+
+    useEffect(() => {
+        fetch('/mypost',{
+            headers:{
+                "Authorization": "Bearer "+localStorage.getItem("jwt")
+            }
+        }).then(res=> res.json())
+        .then(result=>{
+            // console.log(result.mypost)
+            setMypics(result.mypost)
+        })
+    }, [])
+
     return(
         <div style={{maxWidth:"550px", margin:"0px auto"}}>
             <div style={{
@@ -16,7 +33,7 @@ const Profile = ()=>{
                 </div>
 
                 <div>
-                    <h4>Naimul Hasan</h4>
+                    <h4>{state? state.name:"Loading"}</h4>
                     <div style={{display:"flex", justifyContent:"space-between", width:"108%"}}>
                         <h5>40 Posts</h5>
                         <h5>40 Followers</h5>
@@ -27,12 +44,16 @@ const Profile = ()=>{
         
             <div className="gallery">
 
-                <img className="item" src="https://images.unsplash.com/photo-1555952517-2e8e729e0b44?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80" />
-                <img className="item" src="https://images.unsplash.com/photo-1555952517-2e8e729e0b44?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80" />
-                <img className="item" src="https://images.unsplash.com/photo-1555952517-2e8e729e0b44?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80" />
-                <img className="item" src="https://images.unsplash.com/photo-1555952517-2e8e729e0b44?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80" />
-                <img className="item" src="https://images.unsplash.com/photo-1555952517-2e8e729e0b44?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80" />
-            </div>
+                {
+                    mypics.map(item=>{
+                        return(
+                            <img className="item" src={item.photo} alt={item.title} />
+                            
+                        )
+                    })
+                }
+
+                </div>
         </div>
 
           
