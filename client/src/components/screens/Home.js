@@ -32,7 +32,7 @@ const Home = ()=>{
 
             {
                 data.map(item=>{
-                    console.log(data)
+                    // console.log(data)
                     return(
                         <div className="card home-card" key={item._id}>
                             <h5>{item.postedBy.name}</h5>
