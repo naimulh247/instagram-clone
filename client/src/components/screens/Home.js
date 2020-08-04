@@ -1,7 +1,22 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 
 
 const Home = ()=>{
+
+    const [data, setData] = useState("")
+
+    useEffect(() => {
+        fetch('/allpost',{
+            headers:{
+                "Authorization": "Bearer "+localStorage.getItem("jwt")
+            }
+        }).then(res =>res.json())
+            .then(result=>{
+                console.log(data)
+                setData(result)
+            })
+    }, [])
+
     return(
         <div className="home">
 
