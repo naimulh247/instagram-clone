@@ -35,7 +35,6 @@ const Home = ()=>{
                                 <input type="text" placeholder="add a comment"/>
                             </div>
                         </div>
-
                     )
                 })
             }
