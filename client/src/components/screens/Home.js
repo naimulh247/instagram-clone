@@ -27,9 +27,26 @@ const Home = ()=>{
             body:JSON.stringify({
                 postId:id
             })
+        }).then(res=>res.json())
+        .then(result=>{
+            console.log(result)
         })
     }
 
+    const unlikePost = (id)=>{
+        fetch('/unlike',{
+            headers:{
+                "Content-Type":"application/json",
+                "Authorization": "Bearer "+localStorage.getItem("jwt")
+            },
+            body:JSON.stringify({
+                postId:id
+            })
+        }).then(res=>res.json())
+        .then(result=>{
+            console.log(result)
+        })
+    }
 
     if(!data){
             return(
