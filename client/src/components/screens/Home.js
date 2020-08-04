@@ -39,6 +39,8 @@ const Home = ()=>{
                 }
             })
             setData(newData)
+        }).catch(err=>{
+            console.log(err)
         })
     }
 
@@ -63,6 +65,8 @@ const Home = ()=>{
                 }
             })
             setData(newData)
+        }).catch(err=>{
+            console.log(err)
         })
     }
 
