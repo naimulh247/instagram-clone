@@ -22,7 +22,7 @@ const Home = ()=>{
         <div className="home">
             
 
-            {/* {
+            {
                 data.map(item=>{
                     console.log(data)
                     return(
@@ -40,7 +40,7 @@ const Home = ()=>{
                         </div>
                     )
                 })
-            } */}
+            }
 
             
 
