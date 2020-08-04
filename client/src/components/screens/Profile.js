@@ -5,7 +5,7 @@ const Profile = ()=>{
 
     const [mypics, setMypics] = useState([])
     const [state, dispatch] = useContext(UserContext)
-
+    console.log(state)
 
     useEffect(() => {
         fetch('/mypost',{
