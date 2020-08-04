@@ -76,7 +76,10 @@ router.put('/comment', requireLogin,(req, res)=>{
         $pull:{comments:comment}
     },{
         new:true
-    }).exec((err, result)=>{
+    })
+    .populate("comments.postedy", "_id name")
+    
+    .exec((err, result)=>{
         if(err){
             return res.status(422).json({err})
         }
