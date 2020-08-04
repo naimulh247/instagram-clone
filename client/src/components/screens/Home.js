@@ -20,7 +20,9 @@ const Home = ()=>{
 
     
     if(!data){
-            return <FancySpinner />
+            return(
+                <div></div>
+            )
         } 
     
     else{
