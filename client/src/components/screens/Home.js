@@ -13,7 +13,7 @@ const Home = ()=>{
         }).then(res=>res.json())
         .then(result=>{
             console.log(result.post)
-            setData(result.posts)
+            setData(result.post)
             console.log(data)
         })
      },[])
