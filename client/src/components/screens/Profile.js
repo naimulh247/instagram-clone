@@ -12,7 +12,7 @@ const Profile = ()=>{
         .then(result=>{
             console.log(result)
         })
-    }, [input])
+    }, [])
 
     return(
         <div style={{maxWidth:"550px", margin:"0px auto"}}>
