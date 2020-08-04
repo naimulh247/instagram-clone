@@ -1,7 +1,9 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 
 
 const Profile = ()=>{
+
+    const [mypics, setMypics] = useState([])
 
     useEffect(() => {
         fetch('/mypost',{
