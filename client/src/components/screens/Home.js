@@ -18,7 +18,15 @@ const Home = ()=>{
         })
      },[])
 
-    return( 
+    
+    if(!data){
+            return(
+                <div></div>
+            )
+        } 
+    
+    
+        return(
         <div className="home">
             
 
