@@ -12,7 +12,7 @@ const Home = ()=>{
             }
         }).then(res=>res.json())
         .then(result=>{
-            console.log(result.posts)
+            console.log(result.post)
             setData(result.posts)
             console.log(data)
         })
