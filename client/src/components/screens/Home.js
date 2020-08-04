@@ -83,6 +83,18 @@ const Home = ()=>{
                 postId:postId,
                 text:text
             })
+        }).then(res=>res.json())
+        .then(result=>{
+            console.log(result)
+            const newData = data.map(item=>{
+                if(item._id == result._id){
+                    return result
+                }
+                else{
+                    return item
+                }
+            })
+            setData(newData)
         })
     }
 
@@ -128,7 +140,7 @@ const Home = ()=>{
                                 <p>{item.body}</p>
                                 <form onSubmit={(e)=>{
                                     e.preventDefault()
-                                    console.log(e.target[0].value)
+                                    makeComment(e.target[0].value, item._id)
                                 }}>
 
                                     <input type="text" placeholder="add a comment"/>
