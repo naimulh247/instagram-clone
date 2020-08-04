@@ -16,7 +16,7 @@ const Home = ()=>{
             setData(result.posts)
             console.log(data)
         })
-     },[data])
+     },[])
 
     return( 
         <div className="home">
