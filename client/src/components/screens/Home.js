@@ -72,29 +72,28 @@ const Home = ()=>{
         })
     }
 
-    const makeComment  = (text, postId) =>{
+    const makeComment = (text,postId)=>{
         fetch('/comment',{
             method:"put",
             headers:{
                 "Content-Type":"application/json",
-                "Authorization": "Bearer "+localStorage.getItem("jwt")
+                "Authorization":"Bearer "+localStorage.getItem("jwt")
             },
             body:JSON.stringify({
-                postId:postId,
-                text:text
+                postId,
+                text
             })
         }).then(res=>res.json())
         .then(result=>{
             console.log(result)
             const newData = data.map(item=>{
-                if(item._id == result._id){
-                    return result
-                }
-                else{
-                    return item
-                }
-            })
-            setData(newData)
+              if(item._id==result._id){
+                  return result
+              }else{
+                  return item
+              }
+           })
+          setData(newData)
         }).catch(err=>{
             console.log(err)
         })
