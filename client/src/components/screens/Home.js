@@ -72,6 +72,20 @@ const Home = ()=>{
         })
     }
 
+    const makeComment  = (text, postId) =>{
+        fetch('/comment',{
+            method:"put",
+            headers:{
+                "Content-Type":"application/json",
+                "Authorization": "Bearer "+localStorage.getItem("jwt")
+            },
+            body:JSON.stringify({
+                postId:postId,
+                text:text
+            })
+        })
+    }
+
     if(!data){
             return(
                 <div>Loading</div>
@@ -108,11 +122,17 @@ const Home = ()=>{
                                     }}
                                 >thumb_up</i>
                                 }
-                                
+
                                 <h6> {item.likes.length} Likes</h6>
                                 <h6> {item.title} </h6>
                                 <p>{item.body}</p>
-                                <input type="text" placeholder="add a comment"/>
+                                <form onSubmit={(e)=>{
+                                    e.preventDefault()
+                                    console.log(e.target)
+                                }}>
+
+                                    <input type="text" placeholder="add a comment"/>
+                                </form>
                             </div>
                         </div>
                     )
