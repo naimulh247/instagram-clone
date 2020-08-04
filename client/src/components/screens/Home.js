@@ -18,15 +18,7 @@ const Home = ()=>{
         })
      },[])
 
-    
-    if(!data){
-            return(
-                <div></div>
-            )
-        } 
-    
-    else{
-        return(
+    return( 
         <div className="home">
             
 
@@ -54,7 +46,7 @@ const Home = ()=>{
 
 
         </div>
-    )}
+    )
 }
 
 export default Home
