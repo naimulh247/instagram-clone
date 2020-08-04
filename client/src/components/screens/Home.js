@@ -26,6 +26,7 @@ const Home = ()=>{
         } 
     
     else{
+        return(
         <div className="home">
             
 
@@ -53,7 +54,7 @@ const Home = ()=>{
 
 
         </div>
-    }
+    )}
 }
 
 export default Home
