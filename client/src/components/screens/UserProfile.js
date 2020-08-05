@@ -31,10 +31,10 @@ const Profile = ()=>{
             },
             body:JSON.stringify({
                 followId:userid
+            })
             }).then(res=>res.json())
             .then(data=>{
                 console.log(data)
-            })
         })
     }
 
