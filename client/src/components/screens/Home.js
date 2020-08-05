@@ -100,7 +100,7 @@ const Home = ()=>{
     }
 
     const deletePost = (postid)=>{
-        fetch(`/deletepost/${postId}`, {
+        fetch(`/deletepost/${postid}`, {
             method:"delete",
             headers:{
                 "Authorization":"Bearer "+localStorage.getItem("jwt")
