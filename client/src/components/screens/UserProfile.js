@@ -22,6 +22,22 @@ const Profile = ()=>{
         })
     }, [])
 
+    const followuser = () =>{
+        fetch('/follow',{
+            method: "put",
+            headers:{
+                "Content-Type": "application/json",
+                "Authorization":"Bearer " +localStorage.getItem("jwt")
+            },
+            body:JSON.stringify({
+                followId:userid
+            }).then(res=>res.JSON())
+            .then(data=>{
+                console.log(data)
+            })
+        })
+    }
+
     return(
         <>
         {userProfile ? 
