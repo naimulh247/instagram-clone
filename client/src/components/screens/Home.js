@@ -127,7 +127,7 @@ const Home = ()=>{
                     // console.log(data)
                     return(
                         <div className="card home-card" key={item._id}>
-                            <h5>{item.postedBy.name} <i className="material-icons" style={{float:"right"}}>delete</i></h5>
+                            <h5>{item.postedBy.name} {item.postedBy._id == state._id && <i className="material-icons" style={{float:"right"}}>delete</i>} </h5>
                             <div className="card-image">
                                 <img src={item.photo} />
                             </div>
