@@ -4,6 +4,17 @@ const mongoose = require('mongoose')
 const requireLogin = require('../middleware/requireLogin')
 const Post = mongoose.model("Post")
 
+router.get('/allpost', requireLogin, (req,res)=>{
+    Post.find()
+    .populate("postedBy", "_id name")
+    .populate("comments.postedBy", "name")
+        .then(post=>{
+            res.json({post})
+        })
+        .catch(err=>{
+            console.log(err)
+        })
+})
 
 router.post('/createpost',requireLogin, (req, res)=>{
     const {title, body, pic} = req.body
@@ -52,12 +63,35 @@ router.put('/like', requireLogin,(req, res)=>{
      })
  })
 
- router.put('/unlike', requireLogin,(req, res)=>{
+router.put('/unlike', requireLogin,(req, res)=>{
     Post.findByIdAndUpdate(req.body.postId,{
         $pull:{likes:req.user._id}
     },{
         new:true
     }).exec((err, result)=>{
+        if(err){
+            return res.status(422).json({err})
+        }
+        else{
+            res.json(result)
+        }
+    })
+})
+
+router.put('/comment', requireLogin,(req, res)=>{
+    const comment = {
+        text:req.body.text,
+        postedBy:req.user._id
+    }
+    Post.findByIdAndUpdate(req.body.postId,{
+        $push:{comments:comment}
+    },{
+        new:true
+    })
+    .populate("comments.postedBy", "_id name")
+    .populate("postedBy", "_id name")
+    
+    .exec((err, result)=>{
         if(err){
             return res.status(422).json({err})
         }
