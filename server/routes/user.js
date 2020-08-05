@@ -14,4 +14,4 @@ const Post = mongoose.model("Post")
 
 
 
-module.exports router
+module.exports = router
