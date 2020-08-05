@@ -132,7 +132,7 @@ const Home = ()=>{
                     // console.log(data)
                     return(
                         <div className="card home-card" key={item._id}>
-                            <h5><Link to={"/profile/"+item.postedBy._id}>{item.postedBy.name}</Link> 
+                            <h5><Link to={item.postedBy._id !== state._id? "/profile/"+item.postedBy._id : "/profile" }>{item.postedBy.name}</Link> 
                             {item.postedBy._id == state._id && <i className="material-icons" style={{float:"right"}}
                                 onClick={()=>{
                                     deletePost(item._id)
